@@ -1,0 +1,245 @@
+*
+{
+    box-sizing: border-box;
+}
+
+.topDiv
+{
+    background: coral; height:5vh;margin-right:1vw;width:97vw;position: absolute;left:1vw; top:1vh;z-index: 1;
+}
+.headerDiv
+{
+    background:snow; height:25vh;width:97vw;position: absolute;left:1vw; top:6vh;
+}
+.menuDiv
+{
+    /*background:aquamarine;*/ height:8vh;width:97vw;position: absolute;left:1vw; top:31vh;
+}
+.bodyDiv
+{
+  /*height:80vh;*/width:97vw;position: relative;left:1vw; top:39vh;
+}
+.leftBar
+{
+    background: salmon ;text-align:center;width:20vw;height:200vh;float:left;border:1px solid red;
+}
+.content
+{
+    background:rgb(242, 250, 212);width:76vw;height:100%;float:left;overflow-Y:scroll;/*border:1px solid orange;*/
+}
+.footer
+{
+    /*height:20vh;*/width:97vw;position: absolute;left:1vw;/* top:243vh;  */background:rgb(97, 90, 90);box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-bottom: 10vh;
+}
+.footElement
+{
+    width:33%;padding:10px;float: left; text-decoration: none;color: rgb(237, 250, 249);font-size: 1.5vw ; font-family:  'Tempus Sans ITC','chiller', 'Lucida console','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-align:justify;
+}
+.footElement a
+{
+    text-decoration: none;color: rgb(237, 250, 249);
+}
+h1
+{
+    font-size: 2vw;text-align:center; color: whitesmoke;
+}
+.top
+{
+   float: left; width:19vw; border-left:1px solid snow;line-height:5vh;text-align:center;color:whitesmoke;
+   font-size: 1.4vw;
+}
+.menu
+{
+    color: white;
+}
+.menu a
+{
+    color: white;
+    text-decoration: none;
+}
+.menu ul
+{
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+}
+.menu ul li
+{
+    border: 1px solid wheat;
+    border-top-right-radius: 9vw;
+    border-bottom-left-radius: 9vw;
+    background: rgb(60, 226, 171);
+    text-align: center;
+    font-size: 2vw;
+    width: 19vw;
+    line-height: 8vh;
+    float: left;
+    text-decoration: none;
+
+}
+.menu ul li:hover
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    z-index: 1;
+    background: rgb(201, 88, 88);
+}
+.menu ul li ul
+{
+    background: green;
+}
+.menu ul li ul li
+{
+    display:none;
+    border-radius: 50px;
+}
+.menu ul li:hover ul li
+{
+    display:inline-block;
+    position: relative;
+    z-index: 1;
+    border-radius: 50px;
+    float: left;
+}
+
+.wrap
+{
+    height:50vh;width:22vw;float:left;margin-left:1.5vw;margin-top: 0.2em;padding:0.4vw;border: 1px solid black;
+}
+.wrap img
+{
+    /*height:10%;*/padding:.2vh;height:40vh;
+}
+.wrap img:hover
+{
+    transform: scale(1.1);transition:ease-in-out 1s;
+}
+.des
+{
+    text-align:center;height:8vh; width:100%;color:crimson;background:rgb(204, 171, 128);
+}
+.wrap input
+{
+    line-height: 5vh; border-radius: 12px;margin-top:1vh;background: firebrick;color: darksalmon;font-size: 1vw;font-weight: bold;
+}
+.wrap input:hover
+{
+    background: tomato;line-height: 5vh;border: 0px;cursor: pointer;
+}
+.wrap a
+{
+    text-decoration: none;color:crimson; 
+}
+.input button
+{
+    border-radius: 20px;
+}
+
+.productImage
+{
+    width:50%;height:500px;float: left;margin-top: 40px;padding-left: 10%;background-repeat: no-repeat;background-position-x: center;background-position-y:center;
+}
+.productDesc
+{
+    width:49%;float: left; color:coral; font-size: 1.5vw;margin-left: 1%;
+}
+.colorOption
+{
+    margin-left:4vw;width:30px;height:30px;float:left; background:blue;border-radius:15px;
+}
+.colorOption:hover
+{
+    cursor: pointer;
+}
+.simPro
+{
+    margin-left:3vw;
+    height: 20vh;
+}
+.simPro:hover
+{
+    opacity: 0.5;
+    box-shadow: 3px 4px coral,-3px -4px coral;
+}
+.checkOutForm
+{
+    width:50%;height:500px;float: left;padding-top: 34px;padding-left: 10%; 
+}
+.checkOutForm2
+{
+    width:50%;height:500px;float: left;padding-top: 34px;padding-left: 10%; 
+}
+.checkOutForm2 input[type="text"]
+{
+    background:grey;
+}
+.checkOutForm2 select
+{
+    background: grey;
+}
+input[type="text"]
+{
+    height:40px;width:85%;box-shadow: 2px 2px blanchedalmond; border-radius: 4px; background-color: rgb(255, 239, 209); margin-top: 10px;margin-bottom: 30px;
+}
+input[type="email"]
+{
+    height:40px;width:85%;box-shadow: 2px 2px blanchedalmond; border-radius: 4px; background-color: rgb(255, 239, 209); margin-top: 10px;margin-bottom: 30px;
+}
+input[type="submit"],[type="reset"]
+{
+    height:40px;width:40%;margin: 20px;background-color: rgb(6, 168, 6); border-radius: 10px;color: seashell;font-size: 1.2vw;
+}
+a
+{
+    text-decoration: none;
+}
+input[placeholder]
+{
+    color: cornflowerblue; font-size: 1.1vw;
+}
+label
+{
+    margin:-30px;font-family: "lucida console";
+}
+
+select
+{
+    color: cornflowerblue; font-size: 1.1vw;height:40px;width:40%;box-shadow: 2px 2px blanchedalmond; border-radius: 4px; background-color: rgb(255, 239, 209); margin-top: 10px;margin-bottom: 30px;text-align: center;
+}
+
+.sizeButton
+{
+    width:40px; height:40px; float: left;margin-right:20px;/*border-radius:20px;*/background:red; text-align:center;padding-top:5px;color:papayawhip;
+}
+.delButton
+{
+    width:40px; height:40px; float: left;margin-right:20px;border-radius:20px;background:red; text-align:center;padding-top:5px;color:papayawhip;
+}
+ins
+{
+    color:rgb(4, 83, 4);font-size: 2vw;text-decoration: none;
+}
+.spOffer
+{
+    width:98%; height:23%;float:left; background-image:url('photos/large vas.PNG');background-size:100%;background-repeat:no-repeat;
+}
+.spPrice
+{
+    position: relative;  top:42%; background:white;/*width:40%;*/opacity:0.5;padding-left:2vw;
+}
+
+
+.footElement input[type="text"]
+{
+    height:20px;width:75%;box-shadow: 2px 2px blanchedalmond; border-radius: 4px; background-color: rgb(255, 239, 209); margin-top: 10px;margin-bottom: 30px;
+}
+.searchbutton
+{
+    width:40%;height: 20%;border-top-right-radius:50px;border-bottom-right-radius:50px;background:navy;color:seashell;
+}
+.siteTitle
+{
+    line-height:25vh;font-size:5vw;color:orangered;float:left;text-align:right;
+}

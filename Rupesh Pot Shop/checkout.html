@@ -1,0 +1,149 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>
+            Check out
+        </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="stylesheet1.css" type="text/css" rel="stylesheet">
+        <script src="javaScript.js"></script>
+    </head>
+    <body>
+              
+            <div class="headerDiv">
+                    <div style="width:20%;height:25vh;float: left;"><img src="1.jpg" height="100%"></div>
+                    <div class="siteTitle"><font align="right">&nbsp;&nbsp;&nbsp;&nbsp;Rupesh Pot Shop</font> </div> 
+                    <div style="width:20%;height:25vh;float: right;line-height:25vh;">
+                            <input type="text" style="width:55%;height: 20%;border-top-left-radius:50px;border-bottom-left-radius:50px;">
+                            <input type="button" class="searchbutton" value="Search">
+                    </div>
+                </div>
+            <div class="menuDiv">
+                <div class="menu">
+                        <ul>
+                                <li><a href="newHome.html">Home</a>
+                                    <ul>
+    
+                                        <li>New offers</li>
+                                        <li>Best selling</li>
+                                        <li>Newly arrived</li>
+                                    </ul>
+                                </li>
+                                <li><a href="indoor.html">Indoor planter</a>
+                                     <ul>
+    
+                                        <li><a href="indoor.html">Designer</a></li>
+                                        <li><a href="TableTop.html"> Table pot</a></li>
+                                        <li><a href="hanging.html"> Hanging</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="OutDoor.html"> Outdoor planter</a>
+                                        <ul>
+                                           <li><a href="OutDoor.html"> Designer</a></li>
+                                           <li><a href="small.html"> small</a></li>
+                                           <li><a href="large.html">  Big</a></li>
+                                       </ul>
+                                </li>
+                                <li>Join Us
+                                        <ul>
+                                           <li>Regular customer</li>
+                                           <li>Careers</li>
+                                           <li>Job notice</li>
+                                       </ul>
+                                </li>
+                                <li><a href="AboutUS.html">About Us</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div style="background:burlywood;width:97vw;position: relative;top:39vh;height:117vh;">
+                <div class="checkOutForm">
+                    <h2> Shipping Address :</h2>
+                    <hr />
+                    <form  id="form1" name="fm1" method="get" action="connect.php" method="POST">
+                      
+                       <label for="name"> Full Name:</label><br /> <input type="text" required id="name" autofocus placeholder="Rupesh Kumar Raj" name="fullname"/><br />
+                       <label for="email"> Email :</label><br /><input type="email" required id="email" placeholder="rajrupesh395@gmail.com" name="email" /><br />
+                        <label for='mob'>Mobile :</label>   <br /> <input type="text" required maxlength="10" id="mob"  placeholder="8298402120" name="mobile"/><br />
+                        <label for="add">Address :</label> <br />  <input type="text" required id="add" placeholder="Malik boys hostel near jpiet meerut" name="address" /><br />
+                        <label for="city"> City :</label>  <br />  <input type="text" required id="city" placeholder="Meerut" name="city" /><br />
+                        <label for="state">State : </label> <br />  <input type="text" required id="state" placeholder="Uttar pradesh" name="state" /><br />
+                        <label for="pin">Pin Code : </label> <br />  <input type="text" required id="pin" placeholder="250001" name="pincode" /><br />
+                        <input type="submit" value="Proceed to checkout &rightarrowtail;" onclick="checkAdd();return false;" rel="noindex" rel="nofollow" />
+                        <input type="reset" value="Reset  &CircleTimes;" />
+                    </form>
+                </div>
+                <div class="checkOutForm2" id="payForm">
+                    <h2> Payment</h2>
+                    <hr />
+                    Cards Accepted<br />
+                    <img src="visa.png" alt="visa" width="25%"/>
+                    <img src="mastercard.png" alt="maestro" width="25%" />
+                    <img src="platinum.jpg" alt="debit" width="25%" />
+                    <form  id="form1" name="fm1" method="get">
+                        
+                       <label for="nameOnCard">Name on Card:</label><br /> <input type="text" required id="nameOnCard" autofocus placeholder="Rupesh kumar Raj" readonly /><br />
+                       <label for="cardNo"> Card Number :</label><br /><input type="text" required id="cardNo" placeholder="1234-5678-9012-3456"  readonly/><br />
+                        <label for='exMon'>Expiry month :</label> 
+                        
+                        <label for="exYear"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expiry year :</label>
+                          <br /> 
+                          <select id="exMon" disabled>
+                            <option selected>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                         </select>
+                         <select id="exYear" disabled>
+                            
+                            <option selected >2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>2029</option>
+                         </select>
+                          <br />  
+                         <label for="cvv"> CVV :</label>  <br />  <input type="text" required id="CVV" placeholder="123" readonly/><br />
+                       <a href="reciept.html"> <input type="submit" id="subPay" value="Proceed to payment &rightarrowtail;" disabled/></a>
+                        <input type="reset" id="resPay" value="Reset  &CircleTimes;" disabled/>
+                        <hr />
+                        <tt>Note: You must first fill the shipping address to be able to checkout.
+                        <br /><br />
+                        In case you want to cancel the order do it before product is shipped otherwise payment will not be refunded.</tt>
+                    </form>
+                </div>
+            </div>
+             <div class="footer" style="top:180vh;">
+                    <div class="footElement"><h1>About Rupesh<br /></h1><hr />Rupesh is the Designer and developer of this website.He is familiar with several web designing languages including HTML, CSS, JavaScript, PHP and MySQL. He is also familiar with sone of the programming languages including C language, C++, Java, PHP.</div>
+                    <div class="footElement" style="text-align:center;text-decoration: none;"><h1>Links</h1><hr />
+                        <a href="indoor.html" >Indoor</a><hr />
+                        <a href="outdoor.html" >Outdoor</a><hr />
+                        <a href="tabletop.html" >Table Top</a><hr />
+                        <a href="indoor.html" >Designer</a><hr />
+                        
+                    </div>
+                    <div class="footElement"><h1>feedback</h1><hr />
+                        <form>
+                        Name : <input type="text" required/><br />
+                         Email : <input type="text" required/><br />
+                        FeedBack : <input type="text" required />
+                        <input type="submit" value="submit feedback" />
+                        </form>
+                    </div>
+                </div>
+                <div style="height:20px;width:97vw;top: 220vh;position:absolute;">&nbsp;</div>
+           
+     
+        </body>
+</html>
